@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+}
+.navBar {
+  background-color: #71c4ae;
+  padding:30px;
+}
+
+header ul {
+  float: right;
+  color: white;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+ color:black;
+ font-family: arial;
+ font-size: 16px;
+}
+header p {
+  display: inline-block;
+}
+header::after {
+  content:'';
+  display: table;
+  clear: both;
+}
+
+.heroImg {
+  padding-right: 350px;
+  height:100%;
+  
+  background-color: #71c4ae;
+  
+}
+.content {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #71c4ae;
+  text-align: center;
+}
+
+button {
+  padding: 15px;
+  background-color: #f9c314;
+  color: black;
+  font-size: 15px;
+  border-radius: 4px;
+}
+/* contact us */
+.contact {
+  padding-top: 50px;
+  height: 300px;
+  background: #71c4ae;
+  box-sizing: border-box; 
+  padding-left: 500px;
+
+}
+
+footer {
+  background-color: #71c4ae;
+  padding: 5px;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+.heading {
+  text-align: center;
+  padding: 15px 5px;
+  font-size: 30px;
+   background-color: #649cd3;
+}
+.heading1 {
+  text-align: center;
+  padding: 15px 5px;
+  padding-left: 300px;
+  font-size: 30px;
+   background-color: #71c4ae;
+}
+.heading2 {
+  text-align: center;
+  padding: 5px 5px;
+  font-size: 30px;
+   background-color: #cfda2c;
+}
+/* Hyde Park Theatre Production Section */
+.flexContainer {
+  display: flex;
+  padding: 60px 30px;
+  padding-top: 5px;
+  background-color: #649cd3;
+}
+.flexContainer div {
+  width: 33%;
+  padding: 5px;
+}
+.button {
+  
+    padding: 15px;
+    background-color: #f9c314;
+    color: black;
+    font-size: 15px;
+    border-radius: 4px;
+  }
+  
+
+/* My Work Section */
+.myWork {
+  padding: 60px 30px;
+  padding-top: 0;
+  background-color: #cfda2c;
+}
+
+.workGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 350px 350px 350px;
+  grid-template-areas:
+  "img1 content1"
+  "img2 content2"
+  "img3 content3"
+  ;
+}
+.workGrid img {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  display: block;
+}
+.img1 {
+  grid-area: img1;
+}
+.img2 {
+  grid-area: img2;
+}
+.img3 {
+  grid-area: img3;
+}
+.img1, .img2, .img3, .content1, .content2, .content3 {
+  padding: 80px;
+}
+.content1 {
+  grid-area: content1;
+}
+.content2 {
+  grid-area: content2;
+}
+.content3 {
+  grid-area: content3;
+}
